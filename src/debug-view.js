@@ -227,6 +227,8 @@ export default class About extends Component {
     }
 
     renderStoreStateData(data){
+        if(!data) return;
+
         let items = [];
         if(isObject(data)) {
             for (let k in data) {
@@ -271,10 +273,10 @@ export default class About extends Component {
                         nestedItems={this.renderStoreStateData(state.data)}
                     />,
                     <ListItem
-                        key={index+"event"}
-                        primaryText={state.fromEvent?"Change caused by event":"Unknown change"}
-                        secondaryText={state.fromEvent?state.fromEvent.eventName:undefined}
-                        nestedItems={state.fromEvent?this.renderStoreStateData(state.fromEvent.eventPayload):undefined}
+                        key={index+"source"}
+                        primaryText={state.source.changeReason}
+                        secondaryText={state.source.name}
+                        nestedItems={this.renderStoreStateData(state.source.data)}
                     />]}
             />
         });
