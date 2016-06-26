@@ -303,7 +303,7 @@ export default class About extends Component {
         return (
             <div>
                 <MuiThemeProvider>
-                    <div style={{position: "fixed", top: 0, right: 25, zIndex: 99999999999999, width: 40}}>
+                    <div style={{position: "fixed", top: 0, right: 25, zIndex: 1400, width: 40}}>
                         <IconButton
                             tooltip="debug"
                             tooltipPosition="bottom-left"
