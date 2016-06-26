@@ -28,7 +28,7 @@ const inputStyle = {
     right: 0,
     left: 0,
     width: '100%',
-    opacity: 0,
+    opacity: 0
 };
 
 let SelectableList = MakeSelectable(List);
