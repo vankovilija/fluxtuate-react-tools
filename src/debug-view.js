@@ -261,6 +261,10 @@ export default class About extends Component {
                     backgroundColor: "rgba(0, 0, 0, 0.2)"
                 }
             }
+            let secLines = state.source.name?state.source.name.split("\n"):[];
+            if(secLines.length > 2){
+                secLines.length = 2;
+            }
             return <ListItem
                 key={index}
                 style={style}
@@ -275,7 +279,8 @@ export default class About extends Component {
                     <ListItem
                         key={index+"source"}
                         primaryText={state.source.changeReason}
-                        secondaryText={state.source.name}
+                        secondaryText={secLines.length > 0?(secLines.length > 1?(<div>{secLines[0]}<br />{secLines[1]}</div>):secLines[0]):undefined}
+                        secondaryTextLines={secLines.length}
                         nestedItems={this.renderStoreStateData(state.source.data)}
                     />]}
             />
