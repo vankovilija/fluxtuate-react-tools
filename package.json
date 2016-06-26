@@ -3,7 +3,7 @@
   "logo": {
     "file": "./logo.png"
   },
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "a view enabler for fluxtuate and react, enabling you to use react components as views with decorators",
   "main": "lib/index.js",
   "scripts": {
@@ -55,7 +55,7 @@
     "core-decorators": "^0.12.3",
     "fluxtuate": "0.0.13",
     "fluxtuate-react": "0.0.12",
-    "fluxtuate-tools-plugin": "0.0.10",
+    "fluxtuate-tools-plugin": "0.0.11",
     "material-ui": "^0.15.1",
     "lodash": "^4.13.1",
     "moment": "^2.13.0",
