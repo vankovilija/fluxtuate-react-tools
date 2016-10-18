@@ -53,9 +53,9 @@
   "dependencies": {
     "babel-polyfill": "6.9.1",
     "core-decorators": "^0.12.3",
-    "fluxtuate": "^0.0.90",
-    "fluxtuate-react": "0.0.50",
-    "fluxtuate-tools-plugin": "^0.0.50",
+    "fluxtuate": "^0.0.91",
+    "fluxtuate-react": "0.0.51",
+    "fluxtuate-tools-plugin": "^0.0.51",
     "material-ui": "^0.15.1",
     "lodash": "^4.13.1",
     "moment": "^2.13.0",
